@@ -10,33 +10,34 @@
 <body>
     <header>
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Nosotros</a>
-            
-            <div class="dropdown">
-                <a href="#" role="button" class="dropdown__btn" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
-                    Formación</a>
-                <div class="dropdown__menu" aria-labelledby="dropdownMenuButton">
-                    <a href="#">Angular 7 + Animations &mdash; <small>18 Ene 2019</small></a>
-                    <a href="#">Angular 7 Avanzado &mdash; <small>Proximamente</small></a>
-                    <a href="#">Docker + Kubernetes &mdash;<small>Proximamente</small></a>
-                    <a href="#">NodeJS mdash &mdash;<small>Proximamente</small></a>
-                    <a href="#">CSS + Sass Avanzado &mdash;<small>Proximamente</small></a>
-                    <a href="#">VueJS 2  &mdash;<small>Proximamente</small></a>
-                    <div aria-hidden="true" class="dropdown__menu--divider"></div>
-                    <a href="#">Bootcamp</a>
-                </div>
-            </div>   
-              
-            <a href="#">Referencia</a>
-            <a href="#">Contacto</a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                
+                <li><div class="dropdown">
+                        <a href="#" role="button" class="dropdown__btn" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">Formación</a>
+                        <div class="dropdown__menu" aria-labelledby="dropdownMenuButton">
+                            <a href="#">Angular 7 + Animations &mdash; <small>18 Ene 2019</small></a>
+                            <a href="#">Angular 7 Avanzado &mdash; <small>Proximamente</small></a>
+                            <a href="#">Docker + Kubernetes &mdash;<small>Proximamente</small></a>
+                            <a href="#">NodeJS mdash &mdash;<small>Proximamente</small></a>
+                            <a href="#">CSS + Sass Avanzado &mdash;<small>Proximamente</small></a>
+                            <a href="#">VueJS 2  &mdash;<small>Proximamente</small></a>
+                            <div aria-hidden="true" class="dropdown__menu--divider"></div>
+                            <a href="#">Bootcamp</a>
+                        </div>
+                    </div>   
+                </li>
+                <li><a href="#">Referencia</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>       
         </nav>
 
-            <div class="search">
-                <form>
-                    <label for="busqueda">Buscar en el Campus</label>
-                    <input type="text" class="search__input" id="busqueda" autocomplete="off" aria-haspopup="true" aria-expanded="false">
+        <div>
+            <form class="search">
+                <label for="busqueda">Buscar en el Campus</label>
+                <input type="text" class="search__input" id="busqueda" autocomplete="off" aria-haspopup="true" aria-expanded="false">
                     <div class="dropdown__menu" aria-labelledby="searchAutocomplete">
                         <a href="#">Angular 7</a>
                         <a href="#">Angular 7 + Animations</a>
@@ -45,9 +46,10 @@
                         <a href="#">Otros cursos de formación</a>
                         <a href="#">Bootcamp</a>
                     </div>
-                    <button type="submit">Enviar</button>
-                </form>                
-            </div>                       
+                <button type="submit">Enviar</button>
+            </form>
+        </div>                
+                            
     </header>
 
     <main>
@@ -60,19 +62,25 @@
 
         <article class="training">
             <section class="col">
-                <h2>Angular 7 + Animations</h2>
+                <h2>
+                    <a href="#">7 + Animations</a>   
+                </h2>
                 <img src="images/curso.png" alt="logo Angular">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
             </section>
 
             <section class="col">
-                <h2>Docker + Kubernetes</h2>
+                <h2>
+                    <a href="#">Docker + Kubernetes</a>
+                </h2>
                 <img src="images/curso.png" alt="logo Docker">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
             </section>
 
             <section class="col">
-                <h2>NodeJS</h2>
+                <h2>
+                    <a href="#">NodeJS</a>
+                </h2>
                 <img src="images/curso.png" alt="logo Node">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
             </section>
@@ -107,14 +115,14 @@
     
     <footer> 
        <div class="col">
-           <li>
-                <a href="#">Inicio</a>
-                <a href="#">Servicios</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Formación</a>
-                <a href="#">Referencia</a>
-                <a href="#">Contacto</a>
-            </li>
+           <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Formación</a></li>
+                <li><a href="#">Referencia</a></li>
+                <li><a href="#">Contacto</a></li>
+           </ul>
         </div> 
         
         <div class="col">

@@ -9,108 +9,110 @@
 <body>
 
     <main>
-        <img src="images music player/fondo.jepg">
+        <img src="images music player/fondo.jepg" class="background-img background-img--katy">
 
         <section class="header">
            <div>
-                <form>
-                    <button type="button"></button>
-                    <label for="busqueda"></label>
-                    <input type="text" id="busqueda" placeholder="Type here to search">
+                <form class="search">
+                    <button type="button" class="search__button"></button>
+                    <label for="busqueda" class="search__label"></label>
+                    <input type="text" id="busqueda" placeholder="Type here to search" class="search__input">
                 </form>
             </div>
 
             <div>
                 <p>User</p>
-                <img src="/images music player/people.jpeg">
+                <img src="/images music player/people.jpeg" class="img-user">
             </div>
         </section>
 
-        <aside>
-            <div class="aside_heading">
-                <img src="images music player/logo P izquierda.jpeg">
-                <button type="menu">Menu</button>
-            </div>
+        <aside class="general">
+            <nav class="general__navbar">
+                <div class="general__navbar__heading">
+                    <img src="images music player/logo P izquierda.jpeg">
+                    <button type="menu" class="button button--navbar">Menu</button>
+                </div>
 
-            <div class="music">
-                <p>MUSIC</p>
-                <ul>
-                    <a href="#">Discover</a>
-                    <a href="#">Rising</a>
-                    <a href="#">Inspiration</a>
-                    <a href="#">My stars</a>
-                </ul>
-                <ul>
-                        <a href="#">Songs</a>
-                        <a href="#">Artists</a>
-                        <a href="#">Albums</a>
-                        <a href="#">Radio</a>
-                </ul>
-            </div>
+                <div class="general__navbar__music">
+                    <p>MUSIC</p>
+                    <ul>
+                        <a href="#">Discover</a>
+                        <a href="#">Rising</a>
+                        <a href="#">Inspiration</a>
+                        <a href="#">My stars</a>
+                    </ul>
+                    <ul>
+                            <a href="#">Songs</a>
+                            <a href="#">Artists</a>
+                            <a href="#">Albums</a>
+                            <a href="#">Radio</a>
+                    </ul>
+                </div>
 
-            <div>
-                <p>PLAYLISTS</p>
-                <button type="button">+</button>
-                <ul>
-                    <p>UPlabs focus Golden 80s</p>
-                    <p>Gaming OSTs Playlist title</p>
-                    <p>Smash it!</p>
-                </ul>
-            </div>
+                <div class="general__navbar__playlist">
+                    <p>PLAYLISTS</p>
+                    <button type="button" class="button button--playlist">+</button>
+                    <ul>
+                        <p>UPlabs focus Golden 80s</p>
+                        <p>Gaming OSTs Playlist title</p>
+                        <p>Smash it!</p>
+                    </ul>
+                </div>
+            </nav>
         </aside>
 
-        <section>
-            <div>
-                <button type="button">Save to My stars</button>
+        <section class="main-section">
+            <div class="main-section__general">
+                <button type="button" class="button button--mystars">Save to My stars</button>
                 <p>Katy Perry</p>
-                <a href="#">Albums</a>
-                <a href="#">About</a>
-                <a href="#">Related artists</a>"
+                <a href="#" class="main-section__general__link">Albums</a>
+                <a href="#"class="main-section__general__link">About</a>
+                <a href="#"class="main-section__general__link" >Related artists</a>"
             </div>
 
-            <div>
-                <div>
-                    <img src="images music player/album.jpeg">
+            <div class="main-section__albums">
+                <a href="#" class="main-section__albums__link">
+                    <img src="images music player/album.jpeg" class="main-section__albums_link__img">
                     <p>Witness</p>
                     <p>2017</p>
-                </div>
+                </a>
 
-                <div>
-                    <img src="images music player/album.jpeg">
+                <a href="#" class="main-section__albums__link">
+                    <img src="images music player/album.jpeg" class="main-section__albums_link__img">
                     <p>PRISM</p>
                     <p>2013</p>
-                </div>
+                </a>
 
-                <div>
-                    <img src="images music player/album.jpeg">
+                <a href="#" class="main-section__albums__link">
+                    <img src="images music player/album.jpeg"class="main-section__albums_link__img">
                     <p>Teenage Dream</p>
                     <p>2012</p>
-                </div>
+                </a>
             </div>
 
             <div>
-                <div>
-                    <img src="images music player/album_abajo.png">
-                </div>
+                <a href="#" class="main-section__albums__link">
+                    <img src="images music player/album_abajo.png" class="main-section__albums_link__img--little">
+                </a>
 
-                <div>
-                    <img src="images music player/album_abajo.png">
-                </div>
+                <a href="#" class="main-section__albums__link">
+                    <img src="images music player/album_abajo.png" class="main-section__albums_link__img--little">
+                </a>
 
-                <div>
-                    <img src="images music player/album_abajo.png">
-                </div>
+                <a href="#" class="main-section__albums__link">
+                    <img src="images music player/album_abajo.png" class="main-section__albums_link__img--little">
+                </a>
             </div>
         </section>
 
-        <section>
+        <section class="button-list">
             <div>
-                <ul>
+                <ul class="button-list__album">
                     <li>
                         <p>Random selection</p>
                     </li>
                     <li>
-                        <button type="button">
+                        <button type="button" class="button button--list">
                             <div>
                                 <p>Awake</p>
                                 <p>Awake</p>
@@ -121,7 +123,7 @@
                         </button>
                     </li>
                     <li>
-                        <button type="button">
+                        <button type="button" class="button button--list">
                             <div>
                                 <p>A walk</p>
                                 <p>Dive</p>
@@ -132,7 +134,7 @@
                         </button>
                     </li>
                     <li>
-                        <button type="button">
+                        <button type="button" class="button button--list">
                             <div>
                                 <p>Melanine</p>
                                 <p>Dive</p>
@@ -143,7 +145,7 @@
                         </button>
                     </li>
                     <li>
-                        <button type="button">
+                        <button type="button" class="button button--list">
                             <div>
                                 <p>Division</p>
                                 <p>Epoch</p>
@@ -154,7 +156,7 @@
                         </button>
                     </li>
                     <li>
-                        <button type="button">
+                        <button type="button" class="button button--list">
                             <div>
                                 <p>Epoch</p>
                                 <p>Epoch</p>
@@ -166,7 +168,7 @@
                         
                     </li>
                     <li>
-                        <button type="button">
+                        <button type="button" class="button button--list">
                             <div>
                                 <p>Horizon Poolside remix</p>
                                 <p>Horizon</p>
@@ -177,7 +179,7 @@
                         </button>
                     </li>
                     <li>
-                        <button type="button">
+                        <button type="button" class="button button--list">
                             <div>
                                 <p>Receiver</p>
                                 <p>Epoch</p>
@@ -188,7 +190,7 @@
                         </button>
                     </li>
                     <li>
-                        <button type="button">
+                        <button type="button" class="button button--list">
                             <div>
                                 <p>Daydream</p>
                                 <p>Dive</p>
@@ -199,7 +201,7 @@
                         </button>
                     </li>
                     <li>
-                        <button type="button">
+                        <button type="button" class="button button--list">
                             <div>
                                 <p>Hours</p>
                                 <p>Dive</p>
@@ -210,7 +212,7 @@
                         </button>
                     </li>
                     <li>
-                        <button type="button">
+                        <button type="button" class="button button--list">
                             <div>
                                 <p>Horizon</p>
                                 <p>Epoch</p>
@@ -224,10 +226,36 @@
             </div>
         </section>
 
-        <section>
-            <audio controls="controls">
-                <source src="track.mp3" type="audio/mpeg" />
-            </audio>
+        <section class="audio-player">
+            
+            <div class="audio-player__album">
+                <h2 class="audio-player__album__img-album">
+                    <img src="" alt="imagen album en curso">
+                    <span>Ringstone Eyes<br>Gorillaz</span>
+                </h2>
+            </div>
+
+            <div class="audio-player__buttons">
+                <button type="button" class="button button--random">random</button>
+                <button type="button" class="button button--back">back</button>
+                <button type="button" class="button button--pause">pause</button>
+                <button type="button" class="button button--next">next</button>
+                <button type="button" class="button button--repeat">repeat</button>
+            </div>
+
+            <div class="audio-player__volume-control">
+                <img src="" alt="volume control">
+                <progress value="78" max="100"></progress>
+            </div>
+            <div class="audio-player__progress">
+                <p>2:54</p>
+                <progress value="60" max="100"></progress>
+                <p>4:60</p>
+            </div>
+            <div class="audio-player__final">
+                <button type="button" class="button button--dispositives">icon</button>
+                <button type="button" class="button button--go-to-playlist">playlist</button>
+            </div>
         </section>
     </main>
     
